@@ -27,6 +27,11 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.lh
+.idea
+.vscode
+package-lock.json
+yarn.lock
 
 # vercel
 .vercel

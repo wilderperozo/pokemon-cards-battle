@@ -1,0 +1,13 @@
+.textLogo{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.backgroundPokemon{
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    border-radius: 50%;
+}
