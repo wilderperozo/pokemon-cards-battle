@@ -24,4 +24,4 @@ Third: enjoy!
 
 ### Stack 
 - [Nextjs](https://nextjs.org/)   
-- [tailwindcss](https://tailwindcss.com/)
+- [TailwindCSS](https://tailwindcss.com/)

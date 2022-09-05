@@ -6,8 +6,15 @@
 
 .backgroundPokemon{
     background: #fff;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     border-radius: 50%;
+}
+
+@media screen and (min-width: 1280px) {
+    .backgroundPokemon{
+        width: 400px;
+        height: 400px;
+    }  
 }

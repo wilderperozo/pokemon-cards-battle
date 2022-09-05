@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import styles from "./login.module.css";
 
 export default function Login({ pokemon }) {
@@ -81,7 +80,7 @@ export default function Login({ pokemon }) {
                     </div>
                   </div>
                   <div className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none linear-right justify-center">
-                  <div className={styles.backgroundPokemon}></div>
+                    <div className={styles.backgroundPokemon}></div>
                     <img
                       className="flex justify-center z-10"
                       src={pokemon}
@@ -100,7 +99,7 @@ export default function Login({ pokemon }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps(): Promise<{ props: {pokemon: string} }> {
   const id = Math.floor(Math.random() * (150 - 1 + 1)); // get random number between 1 and 150
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
   const { sprites } = await response.json();
