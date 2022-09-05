@@ -81,7 +81,7 @@ export default function Login({ pokemon }) {
                   </div>
                   <div className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none linear-right justify-center">
                     <div className={styles.backgroundPokemon}></div>
-                    <img
+                    <Image
                       className="flex justify-center z-10"
                       src={pokemon}
                       alt="Random Pokemon"
